@@ -1,0 +1,61 @@
+---
+layout: default
+title: Contact Us
+permalink: /contact/
+---
+
+<h1>Contact {{ site.title }}</h1>
+
+<div class="contact-container">
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="https://formspree.io/f/{{ site.podcast_email }}" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="_replyto" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="_subject">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+    
+    <section class="contact-info">
+        <h2>Other Ways to Connect</h2>
+        
+        <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:{{ site.podcast_email }}">{{ site.podcast_email }}</a>
+        </div>
+        
+        <div class="info-item">
+            <i class="fab fa-twitter"></i>
+            <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-podcast"></i>
+            <span>Subscribe on your favorite podcast platform</span>
+        </div>
+        
+        <div class="social-links">
+            <a href="#" aria-label="Apple Podcasts"><i class="fab fa-apple"></i></a>
+            <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+            <a href="#" aria-label="Google Podcasts"><i class="fas fa-podcast"></i></a>
+        </div>
+    </section>
+</div>

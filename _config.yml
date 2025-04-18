@@ -1,0 +1,36 @@
+# Site settings
+title: HelenPodcast
+description: Learn interesting English phrases, unusual words, and language nuances
+url: https://helenpodcast.github.io
+baseurl: ""
+logo: /assets/images/logo.png
+footer:
+  title: HelenPodcast
+  description: Learn interesting English phrases, unusual words, and language nuances
+  
+
+# Jekyll settings
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+
+# Custom variables
+# dark_primary: "#1a1a2e"
+# dark_secondary: "#16213e"
+# accent_color: "#0f3460"
+# highlight_color: "#e94560"
+podcast_email: contact@helenpodcast.com
+# twitter_username: "helenpodcast"
+# github_username: "helenpodcast"
+
+# Collections
+collections:
+  episodes:
+    output: true
+    permalink: /:collection/:title
+  phrases:
+    output: true
+    permalink: /:collection/:title

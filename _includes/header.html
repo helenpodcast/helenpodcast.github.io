@@ -1,0 +1,19 @@
+<header>
+  <h1><a href="{{ "/" | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+
+  {% if site.logo %}
+    <img src="{{site.logo | relative_url}}" alt="Logo" />
+  {% endif %}
+
+  <p>{{ site.description | default: site.github.project_tagline }}</p>
+  
+  <div class="header-links">
+      <h4>Quick Links</h4>
+      <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/episodes">All Episodes</a></li>
+          <li><a href="/phrases">Phrase Collection</a></li>
+          <li><a href="/about">About the Podcast</a></li>
+      </ul>
+  </div>
+</header>

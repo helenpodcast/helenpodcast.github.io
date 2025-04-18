@@ -1,0 +1,22 @@
+---
+layout: default
+title: All Phrases
+permalink: /phrases/
+---
+
+<h1>All Podcast Phrases</h1>
+
+<p>Browse through all our phrases to learn interesting English phrases, unusual words, and language nuances.</p>
+
+<div class="phrases-list">
+    {% for phrase in site.phrases %}
+    <div class="phrase-item">
+        <h2><a href="{{ phrase.url }}">{{ phrase.title }}</a></h2>
+        <div class="phrase-meta">
+            <time datetime="{{ phrase.date | date_to_xmlschema }}">{{ phrase.date | date: "%B %d, %Y" }}</time>
+            <span class="phrase-duration">{{ phrase.duration }}</span>
+        </div>
+        <p>{{ phrase.excerpt | strip_html }}</p>
+    </div>
+    {% endfor %}
+</div>

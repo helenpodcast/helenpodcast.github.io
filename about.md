@@ -1,0 +1,36 @@
+---
+layout: default
+title: About the Podcast
+permalink: /about/
+---
+
+<h1>About {{ site.title }}</h1>
+
+<div class="about-content">
+    <section>
+        <h2>Our Mission</h2>
+        <p>{{ site.title }} was created to help English learners discover the richness of the language beyond textbooks and standard lessons. We focus on interesting phrases, unusual words, idioms, and cultural references that make English vibrant and sometimes confusing.</p>
+    </section>
+    
+    <section>
+        <h2>The Host</h2>
+        <img src="/assets/images/host.jpg" alt="Podcast Host" class="host-image">
+        <p>Hi, I'm [Host Name], an English teacher with over 10 years of experience helping students from all over the world. I created this podcast to share my passion for the quirky, fascinating aspects of English that often don't get covered in traditional lessons.</p>
+    </section>
+    
+    <section>
+        <h2>What You'll Learn</h2>
+        <ul>
+            <li>Interesting phrases and idioms with their origins</li>
+            <li>Unusual words and how to use them</li>
+            <li>Cultural references in English</li>
+            <li>Pronunciation tips for tricky words</li>
+            <li>Real-world English usage</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>How to Get the Most from This Podcast</h2>
+        <p>We recommend listening to each episode multiple times, taking notes on the phrases that interest you, and trying to use them in your own conversations. Visit our website after each episode to review the phrases and access additional examples.</p>
+    </section>
+</div>

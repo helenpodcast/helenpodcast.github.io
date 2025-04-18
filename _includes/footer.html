@@ -1,0 +1,30 @@
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>{{ site.footer.title }}</h3>
+            <p>{{ site.footer.description }}</p>
+        </div>
+        
+        <div class="footer-social">
+            <h4>Connect</h4>
+            <div class="social-icons">
+                <!-- <a href="https://twitter.com/{{ site.twitter_username }}" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a> -->
+                <a href="mailto:{{ site.podcast_email }}" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <!-- <a href="/rss.xml" aria-label="RSS Feed">
+                    <i class="fas fa-rss"></i>
+                </a> -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    </div>
+</footer>
