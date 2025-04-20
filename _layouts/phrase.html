@@ -11,7 +11,7 @@ layout: default
 
         {{ page.content }}
     </div>
-    
+
     <div class="phrase-examples">
       <h4>Examples</h4>
       <ul>
@@ -20,12 +20,13 @@ layout: default
         {% endfor %}
       </ul>
     </div>
-    
-    <div class="phrase-episodes-card">
+
+    <div class="related-episodes">
         <h3>Related Episodes</h3>
-        
+
         <ul>
-          {% for episode in site.episodes %}
+          {% assign episodes = site.episodes | where_exp: "e", "e.sitemap != false" | sort: "date" | reverse %}
+          {% for episode in episodes %}
             {% if episode.phrases contains page.slug %}
             <li>
                 <a href="{{ episode.url | relative_url }}">{{ episode.title }}</a>
@@ -34,7 +35,7 @@ layout: default
           {% endfor %}
         </ul>
     </div>
-    
+
     <div class="view-all">
         <a href="{{ "/phrases" | relative_url }}" class="view-all-btn">View More Phrases</a>
     </div>

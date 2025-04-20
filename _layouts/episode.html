@@ -9,21 +9,29 @@ layout: default
             <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
         </div>
 
-        <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/{{ page.youtube_id }}"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-        ></iframe>
+        {% if page.youtube_id %}
+        <div class="episode-video">
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube-nocookie.com/embed/{{ page.youtube_id }}"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+            ></iframe>
+        </div>
+        {% endif %}
+
+        <div class="episode-content">
+            {{ content }}
+        </div>
     </div>
-    
-    <div class="episode-phrases-card">
+
+    <div class="related-phrases">
         <h3>Related Phrases</h3>
-        
+
         <ul>
           {% for phrase in site.phrases %}
             {% if page.phrases contains phrase.slug %}
@@ -34,7 +42,7 @@ layout: default
           {% endfor %}
         </ul>
     </div>
-    
+
     <div class="view-all">
         <a href="/episodes" class="view-all-btn">View All Episodes</a>
     </div>

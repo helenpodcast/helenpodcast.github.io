@@ -7,7 +7,7 @@ logo: /assets/images/logo.png
 footer:
   title: HelenPodcast
   description: Learn interesting English phrases
-  
+
 
 # Jekyll settings
 theme: jekyll-theme-minimal
@@ -18,10 +18,6 @@ plugins:
 
 
 # Custom variables
-# dark_primary: "#1a1a2e"
-# dark_secondary: "#16213e"
-# accent_color: "#0f3460"
-# highlight_color: "#e94560"
 podcast_email: contact@helenpodcast.com
 # twitter_username: "helenpodcast"
 # github_username: "helenpodcast"
@@ -30,7 +26,7 @@ podcast_email: contact@helenpodcast.com
 collections:
   episodes:
     output: true
-    permalink: /episodes/:title
+    permalink: /episodes/:slug
   phrases:
     output: true
     permalink: /phrases/:title

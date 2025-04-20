@@ -1,7 +1,6 @@
 ---
 layout: default
-title: "Learn Interesting English Phrases"
-description: "A podcast for English learners featuring interesting phrases, unusual words, and language nuances."
+title: Learn Interesting English Phrases
 ---
 
 <section class="homepage-hero">
@@ -11,20 +10,12 @@ description: "A podcast for English learners featuring interesting phrases, unus
 
 <section class="latest-episodes">
     <h2>Latest Episodes</h2>
-    
-    {% assign episodes = site.episodes | sort: 'date' | reverse | limit: 3 %}
+
+    {% assign episodes = site.episodes | where_exp: "e", "e.sitemap != false" | sort: 'date' | reverse | limit: 3 %}
     {% for episode in episodes %}
-    <div class="episode-card">
-        <h3><a href="{{ episode.url }}">{{ episode.title }}</a></h3>
-        <div class="episode-meta">
-            <time datetime="{{ episode.date | date_to_xmlschema }}">{{ episode.date | date: "%B %d, %Y" }}</time>
-        </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ episode.youtube_id }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p>{{ episode.excerpt | strip_html | truncatewords: 10 }}</p>
-    </div>
-    <hr />
+        {% include episode/short.html episode=episode %}
     {% endfor %}
-    
+
     <div class="view-all">
         <a href="{{ "/episodes" | relative_url }}" class="view-all-btn">View All Episodes</a>
     </div>
@@ -32,7 +23,7 @@ description: "A podcast for English learners featuring interesting phrases, unus
 
 <section class="featured-phrases">
     <h2>Featured Phrases</h2>
-    
+
     {% assign featured_phrases = site.phrases | where: "featured", true | limit: 5 %}
     {% for phrase in featured_phrases %}
     <div class="phrase-card">

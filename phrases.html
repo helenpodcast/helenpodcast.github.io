@@ -15,7 +15,8 @@ permalink: /phrases/
         <div class="phrase-meta">
             <!-- <time datetime="{{ phrase.date | date_to_xmlschema }}">{{ phrase.date | date: "%B %d, %Y" }}</time> -->
         </div>
-        <p>{{ phrase.excerpt | strip_html }}</p>
+
+        <p>{{ phrase.content | strip_html }}</p>
     </div>
     {% endfor %}
 </div>
