@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<section class="phrase">
+    <div class="phrase-card">
+        <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+        <div class="phrase-meta">
+            <!-- <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time> -->
+        </div>
+
+        {{ page.content }}
+    </div>
+    
+    <div class="phrase-examples">
+      <h4>Examples</h4>
+      <ul>
+        {% for example in page.examples %}
+          <li>{{ example }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    
+    <div class="phrase-episodes-card">
+        <h3>Related Episodes</h3>
+        
+        <ul>
+          {% for episode in site.episodes %}
+            {% if episode.phrases contains page.slug %}
+            <li>
+                <a href="{{ episode.url | relative_url }}">{{ episode.title }}</a>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="view-all">
+        <a href="{{ "/phrases" | relative_url }}" class="view-all-btn">View More Phrases</a>
+    </div>
+</section>

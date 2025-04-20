@@ -6,7 +6,7 @@ baseurl: ""
 logo: /assets/images/logo.png
 footer:
   title: HelenPodcast
-  description: Learn interesting English phrases, unusual words, and language nuances
+  description: Learn interesting English phrases
   
 
 # Jekyll settings
@@ -30,7 +30,9 @@ podcast_email: contact@helenpodcast.com
 collections:
   episodes:
     output: true
-    permalink: /:collection/:title
+    permalink: /episodes/:title
   phrases:
     output: true
-    permalink: /:collection/:title
+    permalink: /phrases/:title
+
+# paginate: 5
