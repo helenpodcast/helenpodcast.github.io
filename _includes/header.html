@@ -3,7 +3,7 @@
 
   {% if site.logo %}
     <a href="{{ "/" | relative_url }}">
-      <img src="{{site.logo | relative_url}}" alt="Logo" />
+      <img src="{{ site.logo | relative_url }}" alt="Logo" />
     </a>
   {% endif %}
 
@@ -16,6 +16,9 @@
           <li><a href="{{ "/episodes" | relative_url }}">Episodes</a></li>
           <li><a href="{{ "/phrases" | relative_url }}">Phrases</a></li>
           <li><a href="{{ "/about" | relative_url }}">About the Podcast</a></li>
+          <hr />
+          <li><a href="{{ site.social.youtube.url }}" aria-label="Youtube"><i class="fab fa-youtube"></i> Youtube</a></li>
+          <li><a href="{{ site.social.instagram.url }}" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
       </ul>
   </div>
 </header>

@@ -1,11 +1,11 @@
 # Site settings
-title: HelenPodcast
-description: Learn interesting English phrases, unusual words, and language nuances
-url: https://helenpodcast.github.io
+title: PoducateMe
+description: PoducateMe (the ESL podcast) is your go-to listening companion for learning English in a fun, meaningful, and practical way. Hosted by two seasoned ESL educators, Helen and Hannah, this twice-weekly podcast brings real conversations to life every week. Whether you're studying for a language exam or just looking to improve your everyday English, PoducateMe keeps it light, relatable, and focused on real-world use. Tune in for a dose of language and learning, one episode at a time!
+url: https://poducateme.github.io
 baseurl: ""
-logo: /assets/images/logo.png
+logo: /assets/images/logo.jpg
 footer:
-  title: HelenPodcast
+  title: PoducateMe
   description: Learn interesting English phrases
 
 
@@ -18,9 +18,16 @@ plugins:
 
 
 # Custom variables
-podcast_email: contact@helenpodcast.com
-# twitter_username: "helenpodcast"
-# github_username: "helenpodcast"
+social:
+  email:
+    email: contact@poducateme.com
+    url: undefined
+  youtube:
+    url: https://www.youtube.com/@poducateme
+    username: poducateme
+  instagram:
+    url: https://www.instagram.com/poducateme
+    username: poducateme
 
 # Collections
 collections:
