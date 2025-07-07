@@ -29,6 +29,9 @@ social:
     url: https://www.instagram.com/poducateme
     username: poducateme
 
+google:
+  analytics: G-LJ5RGMRMKQ
+
 # Collections
 collections:
   episodes:
