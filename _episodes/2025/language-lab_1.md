@@ -3,7 +3,7 @@ layout: episode
 title: Language Lab S01E01
 featured: false
 sitemap: true
-date: 2025-07-08 00:00:00
+date: 2025-07-10 00:00:00
 slug: language-lab-s01e01
 youtube_id: R4Hsx3_i67o
 phrases:
