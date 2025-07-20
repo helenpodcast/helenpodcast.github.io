@@ -24,10 +24,16 @@ social:
     url: undefined
   youtube:
     url: https://www.youtube.com/@poducateme
-    username: poducateme
+    username: PoducateMe
   instagram:
     url: https://www.instagram.com/poducateme
-    username: poducateme
+    username: PoducateMe
+  spotify:
+    url: https://open.spotify.com/show/6ahMZX8vX38GJkqDjdpo2L
+    username: PoducateMe
+  reddit:
+    url: https://www.reddit.com/r/PoducateMe/
+    username: PoducateMe
 
 google:
   analytics: G-LJ5RGMRMKQ
