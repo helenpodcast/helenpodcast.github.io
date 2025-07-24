@@ -1,10 +1,10 @@
 ---
 layout: episode
-title: Language Lab S01E03
+title: [S01E03] Language Lab
 featured: false
 sitemap: true
 date: 2025-07-24 00:00:00
-slug: language-lab-s01e03
+slug: s01e03-language-lab
 youtube_id: 561BothpDd8
 phrases:
   - butterbeer
@@ -31,6 +31,6 @@ short_description: |
   Welcome to our Language Lab episode! Here, we break down key vocabulary and expressions we used in our previous episode.
 ---
 
-Welcome to our Language Lab episode! Here, we break down key vocabulary and expressions we used in our <a href="{{ "/episodes/amusement-parks-ride-or-cry" | relative_url }}">previous episode</a>. Don’t forget to check the worksheet here:
+Welcome to our Language Lab episode! Here, we break down key vocabulary and expressions we used in our <a href="{{ "/episodes/s01e03-amusement-parks-ride-or-cry" | relative_url }}">previous episode</a>. Don’t forget to check the worksheet here:
 
 Language Lab Worksheet: How Hannah Got into Language Teaching 👉 <a href="{{ "/resources/2025/07/language-lab-worksheet-03.pdf" | relative_url }}" target="_blank">worksheet.pdf
