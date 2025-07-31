@@ -1,6 +1,6 @@
 ---
 layout: episode
-title: [S01E02] Language Lab
+title: "[S01E02] Language Lab"
 featured: false
 sitemap: true
 date: 2025-07-17 00:00:00
