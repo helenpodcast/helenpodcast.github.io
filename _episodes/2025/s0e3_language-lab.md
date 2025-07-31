@@ -33,4 +33,4 @@ short_description: |
 
 Welcome to our Language Lab episode! Here, we break down key vocabulary and expressions we used in our <a href="{{ "/episodes/s01e03-amusement-parks-ride-or-cry" | relative_url }}">previous episode</a>. Don’t forget to check the worksheet here:
 
-Language Lab Worksheet: How Hannah Got into Language Teaching 👉 <a href="{{ "/resources/2025/07/language-lab-worksheet-03.pdf" | relative_url }}" target="_blank">worksheet.pdf
+Language Lab Worksheet: Amusement Parks (Ride or Cry) 👉 <a href="{{ "/resources/2025/07/language-lab-worksheet-03.pdf" | relative_url }}" target="_blank">worksheet.pdf
