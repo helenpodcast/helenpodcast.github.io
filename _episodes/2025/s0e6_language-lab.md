@@ -13,5 +13,4 @@ short_description: |
 
 Welcome to our Language Lab episode! Here, we break down key vocabulary and expressions we used in our <a href="{{ "/episodes/s01e06-special-guest-interview-yuliana-vs-boredom-a-hobby-story" | relative_url }}">previous episode</a>. Don’t forget to check the worksheet here:
 
-Language Lab Worksheet: [Special Guest Interview] Yuliana vs. Boredom: A Hobby Story
-featured: false 👉 <a href="{{ "/resources/2025/08/language-lab-worksheet-06.pdf" | relative_url }}" target="_blank">worksheet.pdf
+Language Lab Worksheet: [Special Guest Interview] Yuliana vs. Boredom: A Hobby Story 👉 <a href="{{ "/resources/2025/08/language-lab-worksheet-06.pdf" | relative_url }}" target="_blank">worksheet.pdf
